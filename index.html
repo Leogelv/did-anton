@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D-ID Agent Demo</title>
+    <title>D-ID Agent</title>
     <style>
         * {
             margin: 0;
@@ -12,64 +12,28 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
-
-        h1 {
-            margin-bottom: 30px;
-            font-size: 2.5em;
-        }
-
-        p {
-            margin-bottom: 20px;
-            line-height: 1.6;
-            font-size: 1.1em;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
 
         #agent-container {
-            margin-top: 30px;
-            min-height: 400px;
             width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-            background: rgba(0, 0, 0, 0.2);
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to D-ID Agent Demo</h1>
-        <p>Experience the future of AI-powered digital humans</p>
-        <div id="agent-container">
-            <script
-                type="module"
-                src="https://agent.d-id.com/v1/index.js"
-                data-name="did-agent"
-                data-mode="fabio"
-                data-client-key="Z29vZ2xlLW9hdXRoMnwxMDI3ODg5MDU2MTc5ODUxNDc4NDI6dkZMaFhPSVA2RjBXU3F3UHpFY210"
-                data-agent-id="agt_-LXPpsrv"
-                data-monitor="true">
-            </script>
-        </div>
+    <div id="agent-container">
+        <script
+            type="module"
+            src="https://agent.d-id.com/v1/index.js"
+            data-name="did-agent"
+            data-mode="fabio"
+            data-client-key="Z29vZ2xlLW9hdXRoMnwxMDI3ODg5MDU2MTc5ODUxNDc4NDI6dkZMaFhPSVA2RjBXU3F3UHpFY210"
+            data-agent-id="agt_-LXPpsrv"
+            data-monitor="true">
+        </script>
     </div>
 </body>
 </html> 
